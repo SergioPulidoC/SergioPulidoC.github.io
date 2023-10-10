@@ -111,6 +111,14 @@
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+							<div class="portfolio-caption">
+								<h2>Project 2</h2>
+								<p>Project description goes here.</p>
+								<div class="tags">
+									<span class="badge badge-primary">Tag 4</span>
+									<span class="badge badge-secondary">Tag 5</span>
+								</div>
+							</div>
                         </a>
                     </div>
                     <div class="col-lg-6">
