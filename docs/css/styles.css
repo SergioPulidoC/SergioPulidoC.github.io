@@ -11108,3 +11108,14 @@ footer.footer .social-link:hover {
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+.tag-capsule {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-right: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none; 
+}
