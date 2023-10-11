@@ -11108,3 +11108,54 @@ footer.footer .social-link:hover {
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+.tag-capsule {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-right: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none; 
+}
+
+.orionhead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-about {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+.project-about .caption {
+  background-color: #888;
+  position: relative;
+  justify-content: flex-start;
+}
+.project-about .caption .caption-content {
+  color: #fff;
+  padding: 2rem; /* Add padding for text */
+  text-align: left;
+}
+.project-about .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.project-about .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}

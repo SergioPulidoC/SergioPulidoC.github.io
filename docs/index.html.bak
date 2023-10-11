@@ -26,7 +26,14 @@
                 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
                 <li class="sidebar-nav-item"><a href="#about">About me</a></li>
                 <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item">
+					<a href="#portfolio">Portfolio</a>
+					<ul class="sub-menu">
+						<li class="sub-menu-item"><a href="Orion.html">Orion</a></li>
+						<li class="sub-menu-item"><a href="project2.html">Project 2</a></li>
+						<!-- Add similar sub-menu items for other projects -->
+					</ul>
+				</li>
                 <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -104,7 +111,7 @@
 				<div class="row gx-0">
 					<!-- Project 1 -->
 					<div class="col-lg-6">
-						<a class="portfolio-item" href="#!">
+						<a class="portfolio-item" href="Orion.html">
 							<div class="caption">
 								<div class="caption-content">
 									<div class="h2">Orion (2023)</div>
@@ -175,12 +182,16 @@
 									<div class="tags">
 										<span style="background-color: #007bff;" class="tag-capsule badge badge-primary">Completed</span>
 										<span style="background-color: #ffdb4f;" class="tag-capsule badge badge-primary">1 year</span>
-										<span style="background-color: #28a745;" class="tag-capsule badge badge-success">Sole developer</span>
+										<span style="background-color: #28a745;" class="tag-capsule badge badge-success">Solo developer</span>
 										<span style="background-color: #ff6344;" class="tag-capsule badge badge-success">Unity (C#)</span>
 									</div>
 								</div>
 							</div>
-							<img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+							<video autoplay muted class="img-fluid">
+								<source src="assets/videos/AprendiendoConEmma.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
 						</a>
 					</div>
 					<!-- Project 5 -->
@@ -193,12 +204,16 @@
 									<div class="tags">
 										<span style="background-color: #007bff;" class="tag-capsule badge badge-primary">Completed</span>
 										<span style="background-color: #ffdb4f;" class="tag-capsule badge badge-primary">1 year</span>
-										<span style="background-color: #28a745;" class="tag-capsule badge badge-success">Sole developer</span>
+										<span style="background-color: #28a745;" class="tag-capsule badge badge-success">Solo developer</span>
 										<span style="background-color: #ff6344;" class="tag-capsule badge badge-success">Unity (C#)</span>
 									</div>
 								</div>
 							</div>
-							<img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+							<video autoplay muted class="img-fluid">
+								<source src="assets/videos/VolandoJuntos.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
 						</a>
 					</div>
 				</div>
