@@ -30,7 +30,7 @@
 					<a href="#portfolio">Portfolio</a>
 					<ul class="sub-menu">
 						<li class="sub-menu-item"><a href="Orion.html">Orion</a></li>
-						<li class="sub-menu-item"><a href="project2.html">Project 2</a></li>
+						<li class="sub-menu-item"><a href="Travesia.html">Travesía</a></li>
 						<!-- Add similar sub-menu items for other projects -->
 					</ul>
 				</li>
@@ -72,7 +72,7 @@
         </section>
         <!-- Services-->
         <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-3 px-lg-8">
+            <div class="container px-3 px-lg-12">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">My skills</h3>
                     <h2 class="mb-5">Multidisciplinary experience</h2>
@@ -101,7 +101,7 @@
 					<div class="col-lg-2 col-md-6">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-heart"></i></i></span>
                         <h4><strong>Biomedical background</strong></h4>
-                        <p class="text-faded mb-0">Dynamic UI, input handling, audio management, camera systems, localization.</p>
+                        <p class="text-faded mb-0">Experience in signal and image processing. Specialization in computer vision.</p>
                     </div>
                 </div>
             </div>
