@@ -20,6 +20,7 @@
     <body id="page-top">
         <!-- Header-->
         <header class="orionhead d-flex align-items-center">
+			<a class="btn btn-primary btn-xl" href="#about" style="position:fixed">Know more about me!</a>
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-1">Orion</h1>
                 <h3 class="mb-5"><em>Single-Player MMO-Inspired Adventure</em></h3>
@@ -174,13 +175,21 @@
 				</ul>	
 				<div class="row gx-4 gx-lg-5 justify-content-center text-center">
 						<div class="col-lg-6">
-							<img class="img-fluid" src="assets/img/OrionHUD.png"/>
+							<video autoplay muted loop class="img-fluid">
+								<source src="assets/videos/OrionGeneration1.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
 						</div>
 						<div class="col-lg-6">
-							<img class="img-fluid" src="assets/img/OrionInventory.png"/>
+							<video autoplay muted loop class="img-fluid">
+								<source src="assets/videos/OrionGeneration2.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
-				<p style="text-align: left;"><em>Preview of the current state of Orion's HUD.</em></p>
+				<p style="text-align: left;"><em>Procedural generation of 100 and 500 rooms, respectively.</em></p>
 			</div>
         </section>
 		<footer class="footer text-center" id = contact>
