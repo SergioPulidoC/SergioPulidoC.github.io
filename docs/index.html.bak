@@ -72,30 +72,35 @@
         </section>
         <!-- Services-->
         <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
+            <div class="container px-3 px-lg-8">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">My skills</h3>
                     <h2 class="mb-5">Multidisciplinary experience</h2>
                 </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div class="row gx-4 gx-lg-5 justify-content-center text-center">
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-code"></i></span>
                         <h4><strong>Programming languages</strong></h4>
                         <p class="text-faded mb-0">Knowledge of over 10 programming languages, including C++, C#, Python, GDScript and JavaScript.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-gear"></i></span>
                         <h4><strong>Game engines</strong></h4>
                         <p class="text-faded mb-0">Over 6 years of experience using Unity. Knowledge of Godot's architecture. Ease to learn new game engines.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-cubes"></i></span>
                         <h4><strong>Back-end development</strong></h4>
                         <p class="text-faded mb-0">Game logic and rules, AI, data storage and retrieval, database management, patching.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-2 col-md-6 mb5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-window-maximize"></i></span>
                         <h4><strong>Front-end development</strong></h4>
+                        <p class="text-faded mb-0">Dynamic UI, input handling, audio management, camera systems, localization.</p>
+                    </div>
+					<div class="col-lg-2 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-heart"></i></i></span>
+                        <h4><strong>Biomedical background</strong></h4>
                         <p class="text-faded mb-0">Dynamic UI, input handling, audio management, camera systems, localization.</p>
                     </div>
                 </div>
@@ -123,7 +128,11 @@
 									</div>
 								</div>
 							</div>
-							<img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+							<video autoplay muted loop class="img-fluid">
+								<source src="assets/videos/Orion.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
 						</a>
 					</div>
 
@@ -142,7 +151,7 @@
 									</div>
 								</div>
 							</div>
-							<video autoplay muted class="img-fluid">
+							<video autoplay muted loop class="img-fluid">
 								<source src="assets/videos/Green World - Travesia.mp4" type="video/mp4">
 								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
 								Your browser does not support the video tag.
@@ -165,7 +174,7 @@
 									</div>
 								</div>
 							</div>
-							<video autoplay muted class="img-fluid">
+							<video autoplay muted loop class="img-fluid">
 								<source src="assets/videos/MiniTravesia.mp4" type="video/mp4">
 								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
 								Your browser does not support the video tag.
@@ -187,7 +196,7 @@
 									</div>
 								</div>
 							</div>
-							<video autoplay muted class="img-fluid">
+							<video autoplay muted loop class="img-fluid">
 								<source src="assets/videos/AprendiendoConEmma.mp4" type="video/mp4">
 								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
 								Your browser does not support the video tag.

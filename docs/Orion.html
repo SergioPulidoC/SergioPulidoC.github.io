@@ -62,16 +62,136 @@
                 </div>
             </div>
         </section>
-		<!-- <section class="content-section bg-light" id="mainpoints"> -->
-            <!-- <div class="container px-4 px-lg-5 text-center"> -->
-				<!-- <div class="col-lg-5"> -->
-					<!-- <div class="h2">Introduction</div> -->
-					<!-- asdasdasdasdasdasd asd asdsad asd 																					 -->
-				<!-- </div> -->
-            <!-- </div> -->
-        <!-- </section> -->
-        <!-- Contact-->
-        <footer class="footer text-center" id = contact>
+		<section class="content-section bg-light" id="intro">
+            <div class="container px-4 px-lg-5 text-left">
+				<div class="h2">Introduction</div>
+				Orion is my innovative approach to bringing the dynamic combat experience of MMOs to a single-player, offline environment. In Orion, a single player takes command of a group of five characters, each with distinct roles and advantages. The game distinguishes itself by allowing players to queue up actions that can be implemented while the game is paused, placing the main focus firmly on strategic decision-making rather than quick reflexes.
+
+				Orion has been an exciting journey that has not only brought this unique concept to life but has also enabled me to craft a wide array of in-house tools from the ground up. These tools, ranging from data storage and retrieval to an intricate aggro system, stat modifiers, temporal status effects, dynamic inventories, and responsive UI, have been instrumental in shaping the rich gameplay experience Orion offers.
+
+				This project has also been a platform for honing my skills in creating custom editors for Unity's MonoBehaviour classes and scriptable objects, effectively bridging the gap between code and design. By streamlining variable assignments based on class use, it has elevated the project's efficiency and overall quality.
+
+				Additionally, Orion has provided an exciting opportunity to implement a bespoke procedural generation algorithm. This algorithm empowers designers to craft prefabricated rooms and seamlessly integrate them into the game world based on its structure. Set in an isometric environment, Orion features multiple levels, enriching the gaming experience.
+
+				In sum, Orion has been a cornerstone of my professional growth, equipping me with enhanced skills in backend content creation and a profound understanding of diverse design architectures. These skills position me as a valuable asset for implementing and maintaining a wide range of internal game subsystems.				
+            </div>
+        </section>
+		<section class="content-section bg-dark" id="subsystems">
+            <div class="container px-2 px-lg-3 text-left">
+				<div class="subsystems-content">
+					<div class="h2">Subsystems</div>
+					<p class="intro-text">
+						While my approach to Orion's subsystems may not be groundbreaking, I take pride in the fact that they are my own creations. These subsystems are designed with a modular structure and a commitment to SOLID principles, which ensures their flexibility and ease of maintenance. Below, you can explore some of the key subsystems utilized in Orion.						</p>					
+				</div>
+				<div class="container px-2 px-lg-5 text-center">
+					<div class="row gx-4 gx-lg-5 justify-content-center text-center">
+						<!-- Save system -->
+						<div class="col-lg-5">
+							<div class="project-about"style="max-width:2000px">
+								<div class="caption">
+									<div class="caption-content">
+										<div class="h3">Save System</div>
+										<p>Effective data management is the backbone of seamless gaming experiences. Orion's Save System offers a well-structured approach to storing and retrieving player progress. It consists of two key structures: Settings data and Progress data.</p>
+										<ul>
+											<li>The save system consists of two structures: Settings data and Progress data.</li>
+											<li>Settings are shared globally among all save files in the game, while Progress saves specific information for each playthrough of Orion.</li>
+											<li>Data is serialized as a JSON file, encrypted, and saved locally.</li>
+											<li>Future plans include implementing cloud-based saves for enhanced security against player manipulation.</li>
+											<li>A Data Migration class is available to convert old save files to the latest game version.</li>
+										</ul>												
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Inventory system -->
+						<div class="col-lg-7">
+							<div class="project-about" style="max-width:2000px">
+								<div class="caption">
+									<div class="caption-content">
+										<div class="h3">Inventory System</div>
+										<p>The Inventory System in Orion is a vital component, providing efficient item management for players. It is designed to enhance the gameplay experience by offering streamlined storage and retrieval of in-game items.</p>
+										<ul>
+											<li><strong>Item and Inventory Structure:</strong> The system is built around two main components: items and inventories.</li>
+											<li><strong>Abstract Item Class:</strong> Items are represented by the abstract Item class, which allows for dynamic properties like the quantity of items held, as well as static properties defined through a scriptable object, such as their name, description, and type.</li>
+											<li><strong>Efficient Linking:</strong> Each item is assigned a unique ID, simplifying the connection with its scriptable object without the need to save all static properties, thereby improving storage efficiency.</li>
+											<li><strong>Type-Specific Inherited Classes:</strong> To maintain modularity, we've implemented an inherited class for each type of object (e.g., supply, loot, or equipment).</li>
+											<li><strong>Inventory Slots:</strong> Inventories are made up of slots, each indicating the item currently stored within. This structure allows for the creation of functions for each inventory, which in turn call functions for each slot, ensuring an efficient and organized use of the inventory system.</li>
+										</ul>											
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row gx-4 gx-lg-5 justify-content-center text-center">
+						<!-- Threat management -->
+						<div class="col-lg-12">
+							<div class="project-about" style="max-width:2000px">
+								<div class="caption">
+									<div class="caption-content">
+										<div class="h3">Threat Management</div>
+											<p>In the world of game development, an effective threat management system can define the intelligence of enemies and their decision-making. In Orion, we've implemented a robust threat management system inspired by MMOs.</p>
+											<ul>
+												<li><strong>Strategic Decision-Making:</strong> Each enemy in Orion maintains a list of player characters and the level of threat they pose. This threat assessment is dynamic, depending on the actions taken by each character. In most scenarios, enemies prioritize targeting characters that represent the highest threat to them.</li>
+												<li><strong>Dynamic Threat Generation:</strong> Our system ensures that combat actions generate threat. When a player character inflicts damage, the enemy experiences an increase in threat. Conversely, healing actions generate threat among all active enemies, making healers a tempting target.</li>
+												<li><strong>Protecting Vulnerable Allies:</strong> Some character abilities are designed to generate threat strategically, safeguarding more vulnerable team members. This dynamic element enhances the tactical depth of the game.</li>
+												<li><strong>Efficiency and Accessibility:</strong> Orion's threat management system is expertly handled through a singleton using graph theory. This design choice ensures not only efficiency but also ease of access, contributing to a seamless gaming experience.</li>
+											</ul>												
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row gx-4 gx-lg-5 justify-content-center text-center">
+						<div class="col-lg-6">
+							<img class="img-fluid" src="assets/img/OrionHUD.png"/>
+						</div>
+						<div class="col-lg-6">
+							<img class="img-fluid" src="assets/img/OrionInventory.png"/>
+						</div>
+					</div>
+					<p style="text-align: left; color: white"><em>Preview of the current state of Orion's HUD.</em></p>
+				</div>
+            </div>
+			
+        </section>
+		<section class="content-section bg-light" id="mapgeneration">
+            <div class="container px-4 px-lg-5 text-left">
+				<div class="h2">Map generation</div>
+				Map generation in Orion can be done both procedurally or manually. Most levels are generated procedurally in order to improve the length and difficulty of the game. However, for special events in the game, rooms are handcrafted.           
+			
+				Procedural level generation is done through the creation of complex and interconnected level layouts. It operates based on predefined room types and their connections. Its main features are the following:
+				
+				<ul>
+					<li><strong>Palette-Based Room Selection:</strong> The algorithm uses a predefined palette of room types, allowing the designer to create a variety of rooms that can be used to build the level.</li>
+					<li><strong>Connection logic:</strong> It places rooms in a way that ensures logical connections between them. The algorithm considers the number of doors (connections) in each room and makes decisions based on these connections to ensure that rooms are placed in a logically connected manner.</li>
+					<li><strong>Randomization:</strong> Randomization is a fundamental part of the algorithm. It selects a starting room randomly and also selects candidate rooms for connections randomly, providing variety in the generated level layouts.</li>
+					<li><strong>Iterative generation:</strong> The algorithm operates in an iterative manner, generating rooms and connections step by step. It continues generating rooms until specific conditions are met, ensuring that the level is complete and well-connected.</li>
+					<li><strong>Dynamic room copying:</strong> The algorithm dynamically copies rooms onto the level, aligning them with the grid and tilemaps to create the level layout.</li>
+					<li><strong>Seed option:</strong> It offers an option to use a random seed or a specific seed number for reproducible generation.</li>
+					<li><strong>Efficiency and Optimization:</strong> The code is designed with efficiency in mind, including checking for previously filled areas to avoid unnecessary room duplication.</li>
+					<li><strong>Parameter Configuration:</strong> The designer is able to configure parameters such as the number of rooms to generate, the origin tile for starting placement, and the palette of room types to use, providing flexibility in defining the level's characteristics.</li>
+					<li><strong>Multilevel Support:</strong> The code supports the generation of multi-level levels by iterating over individual tilemaps to create complex level layouts.</li>
+				</ul>	
+				<div class="row gx-4 gx-lg-5 justify-content-center text-center">
+						<div class="col-lg-6">
+							<video autoplay muted loop class="img-fluid">
+								<source src="assets/videos/OrionGeneration1.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="col-lg-6">
+							<video autoplay muted loop class="img-fluid">
+								<source src="assets/videos/OrionGeneration2.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+				<p style="text-align: left;"><em>Procedural generation of 100 and 500 rooms, respectively.</em></p>
+			</div>
+        </section>
+		<footer class="footer text-center" id = contact>
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">

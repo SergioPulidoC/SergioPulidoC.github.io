@@ -11142,7 +11142,7 @@ footer.footer .social-link:hover {
   margin: auto auto 1rem;
 }
 .project-about .caption {
-  background-color: #888;
+  background-color: #555;
   position: relative;
   justify-content: flex-start;
 }
@@ -11159,3 +11159,18 @@ footer.footer .social-link:hover {
   font-weight: 300;
   font-size: 1.2rem;
 }
+.subsystems-content {
+    color: white;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+}
+
+.custom-left-margin {
+        margin-left: -20rem;
+    }
+.custom-right-margin {
+        margin-right: 20rem;
+    }
+</style>
