@@ -11014,7 +11014,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-digital.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11173,4 +11173,37 @@ footer.footer .social-link:hover {
 .custom-right-margin {
         margin-right: -20rem;
     }
+.circle-button {
+  display: block;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  transition: background-color 0.15s ease-in-out;
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.go-home {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+}
+.go-home:focus, .scroll-to-top:hover {
+  color: #fff;
+}
+.go-home:hover {
+  background: #343a40;
+}
+.go-home i {
+  font-weight: 800;
+}
 </style>
