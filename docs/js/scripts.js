@@ -78,3 +78,15 @@ function fadeIn(el, display) {
         }
     })();
 };
+
+function toggleBulletPoints(button) {
+    var content = button.nextElementSibling; // Get the next element (bullet points container)
+
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        button.innerText = "Less info";
+    } else {
+        content.style.display = "none";
+        button.innerText = "More info";
+    }
+};

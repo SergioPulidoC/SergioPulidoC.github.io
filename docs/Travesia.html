@@ -18,10 +18,9 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-		<a class="go-home rounded" href="index.html"><i class="fa-solid fa-house"></i></a>
         <!-- Header-->
         <header class="orionhead d-flex align-items-center">
-
+			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-1">Travesía</h1>
                 <h3 class="mb-5"><em>Isometric, facial-expression controlled, 3D adventure inspired by Death's Door</em></h3>
@@ -67,21 +66,58 @@
 		<section class="content-section bg-light" id="intro">
             <div class="container px-4 px-lg-5 text-left">
 				<div class="h2">Introduction</div>
-				Travesía invites you to step into the shoes of Mariana, an ordinary teenager whose life takes an extraordinary turn when she stumbles upon a necklace that once belonged to her mother. Little does she know that this seemingly ordinary heirloom holds the key to unlocking a universe of captivating adventures.
+				<strong>Travesía</strong> invites you to step into the shoes of <strong>Mariana</strong>, an ordinary teenager whose life takes an extraordinary turn when she stumbles upon a <strong>necklace</strong> that once belonged to <strong>her mother</strong>. Little does she know that this seemingly ordinary heirloom holds the key to unlocking a universe of <strong>captivating adventures.</strong><br><br>
 
-				Embark on a journey alongside Mariana and her enigmatic companion, Raku, as they traverse a mesmerizing 3D world from an isometric perspective. In 'Travesía,' combat takes center stage, challenging your precision and timing. Roll to evade enemies' relentless attacks, and master the art of striking at precise moments to avoid danger. Your skill in combat is vital to keep Mariana safe from harm.
+				Embark on a journey alongside Mariana and her enigmatic companion, <strong>Raku</strong>, as they traverse a mesmerizing <strong>3D world from</strong> an <strong>isometric perspective</strong>. In Travesía, combat takes center stage, challenging your <strong>precision and timing</strong>. Roll to evade enemies' relentless attacks, and master the art of striking at precise moments to avoid danger. Your skill in combat is vital to keep Mariana safe from harm.<br><br>
 
-				As you delve deeper into this enchanting realm, you'll encounter intricate puzzles that stand as gateways to new worlds. Solving them is the key to unraveling the mysteries that await. 'Travesía' empowers you with a variety of weapons, each offering a unique balance of speed and damage output. Choose your arsenal wisely, for it will be your companion in the face of adversity.
+				As you delve deeper into this enchanting realm, you'll encounter <strong>intricate puzzles</strong> that stand as gateways to new worlds. Solving them is the key to unraveling the mysteries that await. Travesía empowers you with a <strong>variety of weapons</strong>, each offering a unique balance of speed and damage output. Choose your arsenal wisely, for it will be your companion in the face of adversity.<br><br>
 
-				What sets 'Travesía' apart is its innovative use of optional webcam integration. Your facial expressions become your tools for interaction. Blinking can alter the course of your adventure, and subtle facial movements aid in evading a variety of attacks. This groundbreaking feature adds a layer of immersion that makes 'Travesía' a truly one-of-a-kind gaming experience.
+				What sets Travesía apart is its innovative use of optional <strong>webcam integration</strong>. Your <strong>facial expressions</strong> become your tools for interaction. <strong>Blinking</strong> can alter the course of your adventure, and subtle facial movements aid in evading a variety of attacks. This groundbreaking feature adds a layer of immersion that makes Travesía a truly one-of-a-kind gaming experience.<br><br>
 
-				In the world of 'Travesía,' Mariana's journey is a mesmerizing fusion of combat, puzzle-solving, and the art of facial expression interaction. Get ready to uncover the hidden powers of Mariana's necklace and set forth on an adventure like no other.
+				In the world of Travesía, Mariana's journey is a mesmerizing fusion of combat, puzzle-solving, and the art of facial expression interaction. Get ready to uncover the hidden powers of Mariana's necklace and set forth on an adventure like no other.
             </div>
         </section>
-		<section class="content-section bg-dark" id="learned">
-            <div class="container px-2 px-lg-3 text-left">
-				<div class="h1" style = "color:white; margin-bottom: 50px">What I learned...</div>
-				<div class="subsystems-content">
+		<section class="content-section bg-dark" id="computervision">
+            <div class="container px-2 px-lg-3 text-left" style = "color:white">
+				<div class="h1" style = "margin-bottom: 50px">What I learned...</div>
+				<div class="h2">Computer vision</div>
+				<div class="row gx-4 gx-lg-5 justify-content-left text-left" style = "margin-bottom: 50px">
+					<div class="col-lg-6">
+						<video autoplay muted loop class="img-fluid">
+							<source src="assets/videos/TravesiaCv.MP4" type="video/MP4">
+							<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+							Your browser does not support the video tag.
+						</video>
+						<p style="text-align: left;"><em>Example of the algorithms implemented in computer vision library.</em></p>
+					</div>
+				
+					<div class="col-lg-6">
+						<video autoplay muted loop class="img-fluid">
+							<source src="assets/videos/TravesiaQuicktime.mp4" type="video/mp4">
+							<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+							Your browser does not support the video tag.
+						</video>
+						<p style="text-align: left;"><em>Face position-controlled quicktime event in Travesía.</em></p>
+					</div>
+					
+				</div>
+				<p>Travesía provided me with the opportunity to bridge the gap between game development and my background as a biomedical engineer. This bridge took the form of a computer vision library that enabled me to process images for facial expression analysis.</p>			
+				<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+				<div class="collapsible-content bullet-points">
+					<li><strong>OpenCV for Unity:</strong> Integrated the OpenCV library for Unity, which facilitated image processing and computer vision tasks.</li>
+					<li><strong>DNN Face Detection:</strong> Utilized OpenCV for Unity's deep neural network (DNN) face detection algorithm to identify and locate faces within images.</li>
+					<li><strong>Facial Landmarks Detection:</strong> Employed OpenCV for Unity for facial landmarks detection, enabling the detection of key facial points, such as eyes, nose, and mouth.</li>
+					<li><strong>Custom Face Analysis:</strong> Developed a custom library to analyze detected faces, determining their relative position, rotation, and orientation within the game environment.</li>
+					<li><strong>Blink Detection:</strong> Created a proprietary blink detection algorithm inspired by Otsu's algorithm. This algorithm monitored eyelid activity over a period, computed histograms, and determined the point with maximum inter-group variance, effectively detecting blinks.</li>
+				</div>	
+
+				
+			</div>
+        </section>
+		<section class="content-section bg-light" id="learned">
+            <div class="container px-4 px-lg-5 text-left">
+				
+				<div class="subsystems-content" style = "color: black">
 					<div class="h2">Leadership</div>
 					<p class="intro-text">
 						As the project leader of a multifaceted team consisting of 5 developers, including programmers, designers, and artists, Travesía provided me with invaluable insights and experiences in leadership and project management.		
@@ -95,13 +131,14 @@
 									<div class="caption-content">
 										<div class="h3">Agile methodology</div>
 										<p>Travesía was developed using the Agile methodology, a perfect approach for managing a project in constant evolution, fostering continuous improvement and collaboration.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li>We utilized Jira to break the project into manageable phases and analyze sprint-to-sprint development.</li>
 											<li>Sprints were set at a two-week duration, facilitating flexibility and adaptation.</li>
 											<li>Daily scrum meetings allowed team members to report their progress and plans, ensuring alignment and quick response to changes.</li>
 											<li>Each sprint began with task distribution, where timeframes and task complexities were collaboratively discussed with team members.</li>
 											<li>At the end of every sprint, a retrospective meeting enabled team members to summarize their work, share feedback, and identify areas for improvement.</li>
-										</ul>												
+										</div>												
 									</div>
 								</div>
 							</div>
@@ -113,12 +150,13 @@
 									<div class="caption-content">
 										<div class="h3">Standarized formats</div>
 										<p>Collaborating with multiple team members can be challenging, especially when each member has a different approach to organizing elements. Standardization plays a crucial role in ensuring a harmonious workflow.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li>The project's GitHub repository ReadMe included comprehensive guidelines for naming assets and specifying their proper location within the project.</li>
 											<li>We created a programming manual that defined the project's coding and naming conventions, ensuring consistency across the codebase.</li>
 											<li>Several manuals, either authored by me or the respective area experts, were developed for different subsystems used in the project, such as camera handling, localization, and post-processing effects.</li>
 											<li>The design and art teams collaborated on the official brand identity manual for Travesía. This manual outlined the game's official fonts, colors, and element alignments, ensuring a unified visual identity.</li>										
-										</ul>												
+										</div>												
 									</div>
 								</div>
 							</div>
@@ -130,13 +168,14 @@
 									<div class="caption-content">
 										<div class="h3">Version control</div>
 										<p>Efficient version control is paramount when collaborating with multiple developers on a complex project like Travesía.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li>A robust Git repository was established on GitHub to facilitate version control. Git's flexibility and powerful branching model became our backbone for managing the project's source code.</li>
 											<li>Each activity and task set in Jira was seamlessly linked to dedicated branches within the repository. This allowed for a streamlined workflow and clear traceability of changes.</li>
 											<li>For each planned build of the game, a specific branch was created, serving as the foundation from which other branches were derived. This systematic approach ensured a well-organized development process.</li>
 											<li>Upon completion of an activity, a pull request was initiated by the responsible developer. To maintain code quality, a minimum of two peer team members conducted testing. Only after the approval of two peers was the code eligible for merging.</li>
 											<li>Thorough testing of each build's branch was conducted before finalizing the merge into the master branch of the game. This step-by-step approach helped maintain code integrity and minimized integration challenges.</li>
-										</ul>										
+										</div>										
 									</div>
 								</div>
 							</div>
@@ -148,12 +187,13 @@
 									<div class="caption-content">
 										<div class="h3">Team activities</div>
 										<p>Building a strong team involves more than just work. Engaging in non work-related activities fosters communication and strengthens bonds among team members.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li><strong>Biweekly Team Gatherings:</strong> To break the monotony and promote team spirit, we organized gatherings filled with fun activities and shared experiences.</li>
 											<li><strong>Virtual Game Nights:</strong> Despite the challenges posed by the COVID-19 pandemic, we found creative ways to connect and have fun. Virtual game nights became a regular feature, helping us unwind and enjoy each other's company.</li>
 											<li><strong>Conventions and Learning:</strong> We attended industry conventions together to gain insights, network, and keep up with the latest trends. These events provided valuable opportunities to learn and grow as a team.</li>
 											<li><strong>Team Dinners:</strong> Every six months, I invited the team to dinner, where we could relax and celebrate our achievements.</li>
-										</ul>									
+										</div>									
 									</div>
 								</div>
 							</div>
@@ -171,9 +211,9 @@
 							<img class="img-fluid" src="assets/img/TravesiaDialogue.png"/>
 						</div>
 					</div>
-					<p style="text-align: left; color: white"><em>Preview of Travesía and one of the initial dialogues.</em></p>
+					<p style="text-align: left;"><em>Preview of Travesía and one of the initial dialogues.</em></p>
 				</div>
-				<div class="subsystems-content">
+				<div class="subsystems-content" style = "color:black;">
 					<div class="h2">Programming</div>
 					<p class="intro-text">
 						As my inaugural foray into a long-term gaming project, Travesía served as a rich learning ground for various Unity packages and complex systems.
@@ -181,35 +221,37 @@
 				<div class="container px-2 px-lg-5 text-center">
 					<div class="row gx-4 gx-lg-5 justify-content-center text-center">
 						<!-- Localization -->
-						<div class="col-lg-5">
+						<div class="col-lg-6">
 							<div class="project-about"style="max-width:2000px">
 								<div class="caption">
 									<div class="caption-content">
 										<div class="h3">Localization Mastery</div>
 										<p>Travesía marked my initiation into Unity's localization package, unlocking a world of possibilities in game development.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li>Early in the project's lifecycle, I embarked on a comprehensive localization effort, ensuring that all in-game texts and assets were made accessible in both English and Spanish.</li>
 											<li>To maintain organization, I thoughtfully categorized localized strings based on their respective elements, such as item names, descriptions, dialogues, and more.</li>
 											<li>For seamless integration, I implemented asynchronous loading of localization tables at the game's inception. Additionally, I developed a customized localization utility extension to enable real-time access to localized strings during gameplay.</li>
-										</ul>												
+										</div>												
 									</div>
 								</div>
 							</div>
 						</div>
 						<!-- Procedural generation -->
-						<div class="col-lg-7">
+						<div class="col-lg-6">
 							<div class="project-about"style="max-width:2000px">
 								<div class="caption">
 									<div class="caption-content">
 										<div class="h3">Crafting Infinite Worlds: Procedural Maze Generation</div>
 										<p>Within Travesía, I delved into the exciting realm of procedural generation, injecting dynamic elements to keep the game engaging and full of challenge.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li>For the heart of our procedural world-building, I engineered an in-house Depth-first Search (DFS) algorithm. This technique harnessed the power of graph theory, enabling exhaustive exploration of each branching path before skillfully backtracking.</li>
 											<li>To ensure a seamless gaming experience, my DFS implementation leveraged Unity's coroutine system. This innovative approach allowed for the generation of an array of paths within a single frame, maintaining a fluid frame rate of at least 30 FPS.</li>
 											<li>The algorithm provided flexibility with manual adjustment options, allowing for a virtually infinite range of maze configurations by specifying the number of rows and columns.</li>
 											<li>Once the maze structure was in place, we applied a touch of randomness. Randomly selected prefabs were strategically placed within the maze, enhancing its natural appearance and seamless integration with the game's environment.</li>
 											<li>As part of this system, a maze-solving algorithm was thoughtfully designed. Not only did it serve the purpose of debugging, but it also introduced an auditory element, dynamically tailoring the game's difficulty and offering players the perfect challenge.</li>
-										</ul>												
+										</div>												
 									</div>
 								</div>
 							</div>
@@ -223,47 +265,17 @@
 							<img class="img-fluid" src="assets/img/TravesiaMaze2.png"/>
 						</div>
 					</div>
-					<p style="text-align: left; color: white"><em>Two Diverse Renderings of Travesía's Procedurally Generated Mazes.</em></p>
+					<p style="text-align: left;"><em>Two Diverse Renderings of Travesía's Procedurally Generated Mazes.</em></p>
 				</div>
             </div>
 			
         </section>
-		<section class="content-section bg-light" id="computervision">
-            <div class="container px-4 px-lg-5 text-left">
-				<div class="h2">Computer vision</div>
-				Travesía provided me with the opportunity to bridge the gap between game development and my background as a biomedical engineer. This bridge took the form of a computer vision library that enabled me to process images for facial expression analysis.				
-				<ul>
-					<li><strong>OpenCV for Unity:</strong> Integrated the OpenCV library for Unity, which facilitated image processing and computer vision tasks.</li>
-					<li><strong>DNN Face Detection:</strong> Utilized OpenCV for Unity's deep neural network (DNN) face detection algorithm to identify and locate faces within images.</li>
-					<li><strong>Facial Landmarks Detection:</strong> Employed OpenCV for Unity for facial landmarks detection, enabling the detection of key facial points, such as eyes, nose, and mouth.</li>
-					<li><strong>Custom Face Analysis:</strong> Developed a custom library to analyze detected faces, determining their relative position, rotation, and orientation within the game environment.</li>
-					<li><strong>Blink Detection:</strong> Created a proprietary blink detection algorithm inspired by Otsu's algorithm. This algorithm monitored eyelid activity over a period, computed histograms, and determined the point with maximum inter-group variance, effectively detecting blinks.</li>
-				</ul>	
-				<div class="row gx-4 gx-lg-5 justify-content-left text-left">
-					<div class="col-lg-6">
-						<video autoplay muted loop class="img-fluid">
-							<source src="assets/videos/TravesiaCv.MP4" type="video/MP4">
-							<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
-							Your browser does not support the video tag.
-						</video>
-					</div>
-				</div>
-				<p style="text-align: left;"><em>Example of the algorithms implemented in computer vision library.</em></p>
-				<div class="row gx-4 gx-lg-5 justify-content-left text-left">
-					<div class="col-lg-6">
-						<video autoplay muted loop class="img-fluid">
-							<source src="assets/videos/TravesiaQuicktime.mp4" type="video/mp4">
-							<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
-							Your browser does not support the video tag.
-						</video>
-					</div>
-				</div>
-				<p style="text-align: left;"><em>Face position-controlled quicktime event in Travesía.</em></p>
-			</div>
-        </section>
 		<footer class="footer text-center" id = contact>
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
+					<li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.twitch.tv/anthuulos"><i class="fa-brands fa-twitch"></i></a>
+                    </li>
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/anthuulos"><i class="fa-brands fa-x-twitter"></i></a>
                     </li>

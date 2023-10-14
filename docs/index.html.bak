@@ -19,7 +19,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <a class="menu-toggle" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#page-top">Sergio Pulido</a></li>
@@ -27,7 +27,7 @@
                 <li class="sidebar-nav-item"><a href="#about">About me</a></li>
                 <li class="sidebar-nav-item"><a href="#services">Services</a></li>
                 <li class="sidebar-nav-item">
-					<a href="#portfolio">Portfolio</a>
+					<a href="#projects">Projects</a>
 					<ul class="sub-menu">
 						<li class="sub-menu-item"><a href="Orion.html">Orion</a></li>
 						<li class="sub-menu-item"><a href="Travesia.html">Travesía</a></li>
@@ -40,9 +40,16 @@
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">Sergio Pulido</h1>
-                <h3 class="mb-5"><em>Game developer</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Know more about me!</a>
+                <h1 class="mb-1" style = "color:gray; margin-top: 100px">Sergio Pulido</h1>
+                <h3 class="mb-5" style = "color:white;"><em>Game developer</em></h3>
+                <a class="btn btn-primary btn-xl" href="#projects" style = "margin-top: 50px">Projects</a>
+				<div class="container px-4 px-lg-5" style = "margin-top: 50px">
+					<ul class="list-inline mb-5">
+						<li class="list-inline-item">
+							<a class="circle-button rounded-circle text-white mr-3" href="#about"><i class="fa-solid fa-angle-down"></i></a>
+						</li>
+					</ul>
+				</div>
             </div>
         </header>
         <!-- About-->
@@ -107,7 +114,7 @@
             </div>
         </section>
         <!-- Portfolio-->
-		<section class="content-section" id="portfolio">
+		<section class="content-section" id="projects">
 			<div class="container px-4 px-lg-5">
 				<div class="content-section-heading text-center">
 					<h3 class="text-secondary mb-0">Portfolio</h3>
@@ -138,7 +145,7 @@
 
 					<!-- Project 2 -->
 					<div class="col-lg-6">
-						<a class="portfolio-item" href="#!">
+						<a class="portfolio-item" href="Travesia.html">
 							<div class="caption">
 								<div class="caption-content">
 									<div class="h2">Travesía (2023)</div>
@@ -218,7 +225,7 @@
 									</div>
 								</div>
 							</div>
-							<video autoplay muted class="img-fluid">
+							<video autoplay muted loop class="img-fluid">
 								<source src="assets/videos/VolandoJuntos.mp4" type="video/mp4">
 								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
 								Your browser does not support the video tag.

@@ -11014,7 +11014,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-digital.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11171,6 +11171,58 @@ footer.footer .social-link:hover {
         margin-left: -20rem;
     }
 .custom-right-margin {
-        margin-right: 20rem;
+        margin-right: -20rem;
     }
+.circle-button {
+  display: block;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  transition: background-color 0.15s ease-in-out;
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-home {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgba(52, 58, 64, 0.5);
+  --bs-btn-border-color: #0000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #343a40;
+  --bs-btn-hover-border-color: #0000;
+  --bs-btn-focus-shadow-rgb: 63, 147, 173;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #343a40;
+  --bs-btn-active-border-color: #0000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgba(52, 58, 64, 0.5);
+  --bs-btn-disabled-border-color: #1D809F;
+}
+
+/* Initially hide the bullet points */
+.bullet-points {
+    display: none;
+}
+
+/* Style the label as a button */
+.collapsible-label {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the checkbox (hidden) */
+#show-bullet-points {
+    display: none;
+}
+
+/* Style the label when the checkbox is checked */
+#show-bullet-points:checked + .bullet-points {
+    display: block;
+}
 </style>

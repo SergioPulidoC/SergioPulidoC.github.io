@@ -20,7 +20,7 @@
     <body id="page-top">
         <!-- Header-->
         <header class="orionhead d-flex align-items-center">
-			<a class="btn btn-primary btn-xl" href="index.html" style="position:fixed">Back to portfolio!</a>
+			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-1">Orion</h1>
                 <h3 class="mb-5"><em>Single-Player MMO-Inspired Adventure</em></h3>
@@ -66,15 +66,15 @@
 		<section class="content-section bg-light" id="intro">
             <div class="container px-4 px-lg-5 text-left">
 				<div class="h2">Introduction</div>
-				Orion is my innovative approach to bringing the dynamic combat experience of MMOs to a single-player, offline environment. In Orion, a single player takes command of a group of five characters, each with distinct roles and advantages. The game distinguishes itself by allowing players to queue up actions that can be implemented while the game is paused, placing the main focus firmly on strategic decision-making rather than quick reflexes.
+				<strong>Orion</strong> is my innovative approach to bringing the dynamic combat experience of <strong>MMOs</strong> to a <strong>single-player, offline environment</strong>. In Orion, a single player takes command of a group of <strong>five characters</strong>, each with distinct roles and advantages. The game distinguishes itself by allowing players to <strong>queue up actions</strong> that can be implemented while the game is paused, placing the main focus firmly on <strong>strategic decision-making</strong> rather than quick reflexes.<br><br>
 
-				Orion has been an exciting journey that has not only brought this unique concept to life but has also enabled me to craft a wide array of in-house tools from the ground up. These tools, ranging from data storage and retrieval to an intricate aggro system, stat modifiers, temporal status effects, dynamic inventories, and responsive UI, have been instrumental in shaping the rich gameplay experience Orion offers.
+				Orion has been an exciting journey that has not only brought this unique concept to life but has also enabled me to craft a wide array of <strong>in-house tools</strong> from the ground up. These tools, ranging from data storage and retrieval to an intricate aggro system, stat modifiers, temporal status effects, dynamic inventories, and responsive UI, have been instrumental in shaping the <strong>rich gameplay</strong> experience Orion offers.<br><br>
 
-				This project has also been a platform for honing my skills in creating custom editors for Unity's MonoBehaviour classes and scriptable objects, effectively bridging the gap between code and design. By streamlining variable assignments based on class use, it has elevated the project's efficiency and overall quality.
+				This project has also been a platform for honing my skills in creating <strong>custom editors</strong> for Unity's MonoBehaviour classes and scriptable objects, effectively <strong>bridging the gap</strong> between code and design. By streamlining variable assignments based on class use, it has elevated the project's <strong>efficiency and overall quality.</strong><br><br>
 
-				Additionally, Orion has provided an exciting opportunity to implement a bespoke procedural generation algorithm. This algorithm empowers designers to craft prefabricated rooms and seamlessly integrate them into the game world based on its structure. Set in an isometric environment, Orion features multiple levels, enriching the gaming experience.
+				Additionally, Orion has provided an exciting opportunity to implement a bespoke <strong>procedural generation algorithm</strong>. This algorithm empowers designers to craft prefabricated rooms and <strong>seamlessly integrate them</strong> into the game world based on its structure. Set in an <strong>isometric environment</strong>, Orion features multiple biomes, enriching the gaming experience.<br><br>
 
-				In sum, Orion has been a cornerstone of my professional growth, equipping me with enhanced skills in backend content creation and a profound understanding of diverse design architectures. These skills position me as a valuable asset for implementing and maintaining a wide range of internal game subsystems.				
+				In sum, Orion has been a cornerstone of my professional growth, equipping me with enhanced skills in <strong>backend content creation</strong> and a profound understanding of diverse <strong>design architectures</strong>. These skills position me as a valuable asset for implementing and maintaining a wide range of internal <strong>game subsystems</strong>.				
             </div>
         </section>
 		<section class="content-section bg-dark" id="subsystems">
@@ -94,13 +94,14 @@
 									<div class="caption-content">
 										<div class="h3">Save System</div>
 										<p>Effective data management is the backbone of seamless gaming experiences. Orion's Save System offers a well-structured approach to storing and retrieving player progress. It consists of two key structures: Settings data and Progress data.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li>The save system consists of two structures: Settings data and Progress data.</li>
 											<li>Settings are shared globally among all save files in the game, while Progress saves specific information for each playthrough of Orion.</li>
 											<li>Data is serialized as a JSON file, encrypted, and saved locally.</li>
 											<li>Future plans include implementing cloud-based saves for enhanced security against player manipulation.</li>
 											<li>A Data Migration class is available to convert old save files to the latest game version.</li>
-										</ul>												
+										</div>		
 									</div>
 								</div>
 							</div>
@@ -112,13 +113,14 @@
 									<div class="caption-content">
 										<div class="h3">Inventory System</div>
 										<p>The Inventory System in Orion is a vital component, providing efficient item management for players. It is designed to enhance the gameplay experience by offering streamlined storage and retrieval of in-game items.</p>
-										<ul>
+										<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+										<div class="collapsible-content bullet-points">
 											<li><strong>Item and Inventory Structure:</strong> The system is built around two main components: items and inventories.</li>
 											<li><strong>Abstract Item Class:</strong> Items are represented by the abstract Item class, which allows for dynamic properties like the quantity of items held, as well as static properties defined through a scriptable object, such as their name, description, and type.</li>
 											<li><strong>Efficient Linking:</strong> Each item is assigned a unique ID, simplifying the connection with its scriptable object without the need to save all static properties, thereby improving storage efficiency.</li>
 											<li><strong>Type-Specific Inherited Classes:</strong> To maintain modularity, we've implemented an inherited class for each type of object (e.g., supply, loot, or equipment).</li>
 											<li><strong>Inventory Slots:</strong> Inventories are made up of slots, each indicating the item currently stored within. This structure allows for the creation of functions for each inventory, which in turn call functions for each slot, ensuring an efficient and organized use of the inventory system.</li>
-										</ul>											
+										</div>											
 									</div>
 								</div>
 							</div>
@@ -132,12 +134,13 @@
 									<div class="caption-content">
 										<div class="h3">Threat Management</div>
 											<p>In the world of game development, an effective threat management system can define the intelligence of enemies and their decision-making. In Orion, we've implemented a robust threat management system inspired by MMOs.</p>
-											<ul>
+											<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+											<div class="collapsible-content bullet-points">
 												<li><strong>Strategic Decision-Making:</strong> Each enemy in Orion maintains a list of player characters and the level of threat they pose. This threat assessment is dynamic, depending on the actions taken by each character. In most scenarios, enemies prioritize targeting characters that represent the highest threat to them.</li>
 												<li><strong>Dynamic Threat Generation:</strong> Our system ensures that combat actions generate threat. When a player character inflicts damage, the enemy experiences an increase in threat. Conversely, healing actions generate threat among all active enemies, making healers a tempting target.</li>
 												<li><strong>Protecting Vulnerable Allies:</strong> Some character abilities are designed to generate threat strategically, safeguarding more vulnerable team members. This dynamic element enhances the tactical depth of the game.</li>
 												<li><strong>Efficiency and Accessibility:</strong> Orion's threat management system is expertly handled through a singleton using graph theory. This design choice ensures not only efficiency but also ease of access, contributing to a seamless gaming experience.</li>
-											</ul>												
+											</div>												
 									</div>
 								</div>
 							</div>
@@ -196,6 +199,9 @@
 		<footer class="footer text-center" id = contact>
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
+					<li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.twitch.tv/anthuulos"><i class="fa-brands fa-twitch"></i></a>
+                    </li>
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/anthuulos"><i class="fa-brands fa-x-twitter"></i></a>
                     </li>
