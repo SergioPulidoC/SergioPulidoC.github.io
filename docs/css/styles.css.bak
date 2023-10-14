@@ -11120,7 +11120,7 @@ footer.footer .social-link:hover {
     text-decoration: none; 
 }
 
-.orionhead {
+.projecthead {
   min-height: 30rem;
   position: relative;
   display: table;
@@ -11128,10 +11128,37 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden; /* Hide any overflowing content within the header */
+}
+
+.projecthead video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.projecthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.text-capsule {
+    background-color: rgba(150, 150, 150, 0.7);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    z-index: 1;
 }
 
 .project-about {
@@ -11202,27 +11229,14 @@ box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   --bs-btn-disabled-border-color: #1D809F;
 }
 
-/* Initially hide the bullet points */
 .bullet-points {
     display: none;
 }
 
-/* Style the label as a button */
-.collapsible-label {
+.collapsible-button {
     background-color: #333;
     color: #fff;
     cursor: pointer;
     padding: 10px;
     text-align: center;
 }
-
-/* Style the checkbox (hidden) */
-#show-bullet-points {
-    display: none;
-}
-
-/* Style the label when the checkbox is checked */
-#show-bullet-points:checked + .bullet-points {
-    display: block;
-}
-</style>
