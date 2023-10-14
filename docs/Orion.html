@@ -19,9 +19,14 @@
     </head>
     <body id="page-top">
         <!-- Header-->
-        <header class="orionhead d-flex align-items-center">
+		<header class="projecthead d-flex align-items-center">
+		<video autoplay muted loop>
+		  <source src="assets/videos/OrionPreview.mp4" type="video/mp4">
+		  <!-- Add additional source elements for different video formats if needed -->
+		  Your browser does not support the video tag.
+		</video>
 			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
-            <div class="container px-4 px-lg-5 text-center">
+            <div class="container px-4 px-lg-5 text-center text-capsule">
                 <h1 class="mb-1">Orion</h1>
                 <h3 class="mb-5"><em>Single-Player MMO-Inspired Adventure</em></h3>
             </div>
@@ -77,10 +82,47 @@
 				In sum, Orion has been a cornerstone of my professional growth, equipping me with enhanced skills in <strong>backend content creation</strong> and a profound understanding of diverse <strong>design architectures</strong>. These skills position me as a valuable asset for implementing and maintaining a wide range of internal <strong>game subsystems</strong>.				
             </div>
         </section>
-		<section class="content-section bg-dark" id="subsystems">
-            <div class="container px-2 px-lg-3 text-left">
-				<div class="h1" style = "color:white; margin-bottom: 50px">What I've learned...</div>
-				<div class="subsystems-content">
+		<section class="content-section bg-dark" id="mapgeneration">
+            <div class="container px-4 px-lg-5 text-left" style = "color: white">
+				<div class="h2">Map generation</div>
+				Map generation in Orion can be done both procedurally or manually. Most levels are generated procedurally in order to improve the length and difficulty of the game. However, for special events in the game, rooms are handcrafted.           
+			
+				Procedural level generation is done through the creation of complex and interconnected level layouts. It operates based on predefined room types and their connections. Its main features are the following:
+				
+				<ul>
+					<li><strong>Palette-Based Room Selection:</strong> The algorithm uses a predefined palette of room types, allowing the designer to create a variety of rooms that can be used to build the level.</li>
+					<li><strong>Connection logic:</strong> It places rooms in a way that ensures logical connections between them. The algorithm considers the number of doors (connections) in each room and makes decisions based on these connections to ensure that rooms are placed in a logically connected manner.</li>
+					<li><strong>Randomization:</strong> Randomization is a fundamental part of the algorithm. It selects a starting room randomly and also selects candidate rooms for connections randomly, providing variety in the generated level layouts.</li>
+					<li><strong>Iterative generation:</strong> The algorithm operates in an iterative manner, generating rooms and connections step by step. It continues generating rooms until specific conditions are met, ensuring that the level is complete and well-connected.</li>
+					<li><strong>Dynamic room copying:</strong> The algorithm dynamically copies rooms onto the level, aligning them with the grid and tilemaps to create the level layout.</li>
+					<li><strong>Seed option:</strong> It offers an option to use a random seed or a specific seed number for reproducible generation.</li>
+					<li><strong>Efficiency and Optimization:</strong> The code is designed with efficiency in mind, including checking for previously filled areas to avoid unnecessary room duplication.</li>
+					<li><strong>Parameter Configuration:</strong> The designer is able to configure parameters such as the number of rooms to generate, the origin tile for starting placement, and the palette of room types to use, providing flexibility in defining the level's characteristics.</li>
+					<li><strong>Multilevel Support:</strong> The code supports the generation of multi-level levels by iterating over individual tilemaps to create complex level layouts.</li>
+				</ul>	
+				<div class="row gx-4 gx-lg-5 justify-content-center text-center">
+						<div class="col-lg-6">
+							<video autoplay muted loop class="img-fluid">
+								<source src="assets/videos/OrionGeneration1.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="col-lg-6">
+							<video autoplay muted loop class="img-fluid">
+								<source src="assets/videos/OrionGeneration2.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+				<p style="text-align: left;"><em>Procedural generation of 100 and 500 rooms, respectively.</em></p>
+			</div>
+        </section>
+		<section class="content-section bg-light" id="subsystems">
+            <div class="container px-2 px-lg-3 text-left" style = "color: black">
+				<div class="h1" style = "margin-bottom: 50px">What I've learned...</div>
+				<div class="subsystems-content" style = "color: black">
 					<div class="h2">Subsystems</div>
 					<p class="intro-text">
 						While my approach to Orion's subsystems may not be groundbreaking, I take pride in the fact that they are my own creations. These subsystems are designed with a modular structure and a commitment to SOLID principles, which ensures their flexibility and ease of maintenance. Below, you can explore some of the key subsystems utilized in Orion.						</p>					
@@ -159,43 +201,7 @@
             </div>
 			
         </section>
-		<section class="content-section bg-light" id="mapgeneration">
-            <div class="container px-4 px-lg-5 text-left">
-				<div class="h2">Map generation</div>
-				Map generation in Orion can be done both procedurally or manually. Most levels are generated procedurally in order to improve the length and difficulty of the game. However, for special events in the game, rooms are handcrafted.           
-			
-				Procedural level generation is done through the creation of complex and interconnected level layouts. It operates based on predefined room types and their connections. Its main features are the following:
-				
-				<ul>
-					<li><strong>Palette-Based Room Selection:</strong> The algorithm uses a predefined palette of room types, allowing the designer to create a variety of rooms that can be used to build the level.</li>
-					<li><strong>Connection logic:</strong> It places rooms in a way that ensures logical connections between them. The algorithm considers the number of doors (connections) in each room and makes decisions based on these connections to ensure that rooms are placed in a logically connected manner.</li>
-					<li><strong>Randomization:</strong> Randomization is a fundamental part of the algorithm. It selects a starting room randomly and also selects candidate rooms for connections randomly, providing variety in the generated level layouts.</li>
-					<li><strong>Iterative generation:</strong> The algorithm operates in an iterative manner, generating rooms and connections step by step. It continues generating rooms until specific conditions are met, ensuring that the level is complete and well-connected.</li>
-					<li><strong>Dynamic room copying:</strong> The algorithm dynamically copies rooms onto the level, aligning them with the grid and tilemaps to create the level layout.</li>
-					<li><strong>Seed option:</strong> It offers an option to use a random seed or a specific seed number for reproducible generation.</li>
-					<li><strong>Efficiency and Optimization:</strong> The code is designed with efficiency in mind, including checking for previously filled areas to avoid unnecessary room duplication.</li>
-					<li><strong>Parameter Configuration:</strong> The designer is able to configure parameters such as the number of rooms to generate, the origin tile for starting placement, and the palette of room types to use, providing flexibility in defining the level's characteristics.</li>
-					<li><strong>Multilevel Support:</strong> The code supports the generation of multi-level levels by iterating over individual tilemaps to create complex level layouts.</li>
-				</ul>	
-				<div class="row gx-4 gx-lg-5 justify-content-center text-center">
-						<div class="col-lg-6">
-							<video autoplay muted loop class="img-fluid">
-								<source src="assets/videos/OrionGeneration1.mp4" type="video/mp4">
-								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
-								Your browser does not support the video tag.
-							</video>
-						</div>
-						<div class="col-lg-6">
-							<video autoplay muted loop class="img-fluid">
-								<source src="assets/videos/OrionGeneration2.mp4" type="video/mp4">
-								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
-								Your browser does not support the video tag.
-							</video>
-						</div>
-					</div>
-				<p style="text-align: left;"><em>Procedural generation of 100 and 500 rooms, respectively.</em></p>
-			</div>
-        </section>
+		
 		<footer class="footer text-center" id = contact>
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
@@ -209,6 +215,7 @@
                         <a class="social-link rounded-circle text-white" href="https://github.com/SergioPulidoC"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
+				<p class="text-muted small mb-0">Copyright &copy; Sergio Pulido 2023</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->

@@ -27,7 +27,7 @@
 		</video>
 
 			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
-            <div class="container px-4 px-lg-5 text-center">
+            <div class="container px-4 px-lg-5 text-center text-capsule">
                 <h1 class="mb-1">Travesía</h1>
                 <h3 class="mb-5"><em>Isometric, facial-expression controlled, 3D adventure inspired by Death's Door</em></h3>
             </div>
