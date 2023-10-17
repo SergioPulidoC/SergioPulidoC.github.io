@@ -84,9 +84,9 @@ function toggleBulletPoints(button) {
 
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
-        button.innerText = "Hide Bullet Points";
+        button.innerText = "Less info";
     } else {
         content.style.display = "none";
-        button.innerText = "Show Bullet Points";
+        button.innerText = "More info";
     }
 };

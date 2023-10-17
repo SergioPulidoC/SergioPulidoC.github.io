@@ -674,6 +674,8 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  grid-template-columns: 1fr 1fr;
+
 }
 .row > * {
   flex-shrink: 0;
@@ -682,6 +684,7 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+    margin-bottom: 1rem;
 }
 
 .col {
@@ -11121,12 +11124,19 @@ footer.footer .social-link:hover {
 }
 
 .projecthead {
-  min-height: 55rem;
+  min-height: 50rem;
   position: relative;
   display: table;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  overflow: hidden; /* Hide any overflowing content within the header */
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .projecthead {
+    min-height: 0rem;
+	padding: 1rem;
+  }
 }
 
 .projecthead video {
@@ -11148,7 +11158,7 @@ footer.footer .social-link:hover {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 0;
 }
 
 .text-capsule {
@@ -11171,6 +11181,7 @@ footer.footer .social-link:hover {
   background-color: #555;
   position: relative;
   justify-content: flex-start;
+  min-height: 20rem
 }
 .project-about .caption .caption-content {
   color: #fff;
@@ -11226,6 +11237,7 @@ box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: rgba(52, 58, 64, 0.5);
   --bs-btn-disabled-border-color: #1D809F;
+  z-index: 2
 }
 
 .bullet-points {

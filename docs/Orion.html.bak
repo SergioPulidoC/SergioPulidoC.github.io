@@ -21,14 +21,14 @@
         <!-- Header-->
 		<header class="projecthead d-flex align-items-center">
 		<video autoplay muted loop>
-		  <source src="assets/videos/OrionPreview3.mp4" type="video/mp4">
+		  <source src="assets/videos/OrionPreview.mp4" type="video/mp4">
 		  <!-- Add additional source elements for different video formats if needed -->
 		  Your browser does not support the video tag.
 		</video>
 			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
             <div class="container px-4 px-lg-5 text-center text-capsule">
                 <h1 class="mb-1">Orion</h1>
-                <h3 class="mb-5"><em>Single-Player MMO-Inspired Adventure</em></h3>
+                <h3><em>Single-Player MMO-Inspired Adventure</em></h3>
             </div>
         </header>
         <!-- About and info-->
@@ -101,21 +101,13 @@
 					<li><strong>Multilevel Support:</strong> The code supports the generation of multi-level levels by iterating over individual tilemaps to create complex level layouts.</li>
 				</ul>	
 				<div class="row gx-4 gx-lg-5 justify-content-center text-center">
-						<div class="col-lg-6">
-							<video autoplay muted loop class="img-fluid">
-								<source src="assets/videos/OrionGeneration1.mp4" type="video/mp4">
-								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
-								Your browser does not support the video tag.
-							</video>
-						</div>
-						<div class="col-lg-6">
-							<video autoplay muted loop class="img-fluid">
-								<source src="assets/videos/OrionGeneration2.mp4" type="video/mp4">
-								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
-								Your browser does not support the video tag.
-							</video>
-						</div>
+					<div class="col-lg-6">
+						<img src="assets/videos/OrionGeneration1.gif" alt="First procedural generation" class="img-fluid">
 					</div>
+					<div class="col-lg-6">
+						<img src="assets/videos/OrionGeneration2.gif" alt="Second procedural generation" class="img-fluid">
+					</div>
+				</div>
 				<p style="text-align: left;"><em>Procedural generation of 100 and 500 rooms, respectively.</em></p>
 			</div>
         </section>
@@ -130,7 +122,7 @@
 				<div class="container px-2 px-lg-5 text-center">
 					<div class="row gx-4 gx-lg-5 justify-content-center text-center">
 						<!-- Save system -->
-						<div class="col-lg-5">
+						<div class="col-lg-6" id = "save-system">
 							<div class="project-about"style="max-width:2000px">
 								<div class="caption">
 									<div class="caption-content">
@@ -149,7 +141,7 @@
 							</div>
 						</div>
 						<!-- Inventory system -->
-						<div class="col-lg-7">
+						<div class="col-lg-6" id = "inventory-system">
 							<div class="project-about" style="max-width:2000px">
 								<div class="caption">
 									<div class="caption-content">
