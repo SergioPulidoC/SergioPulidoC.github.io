@@ -84,9 +84,9 @@ function toggleBulletPoints(button) {
 
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
-        button.innerText = "Less info";
+        button.innerText = "Less details";
     } else {
         content.style.display = "none";
-        button.innerText = "More info";
+        button.innerText = "Details";
     }
 };
