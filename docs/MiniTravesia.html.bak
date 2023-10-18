@@ -99,7 +99,7 @@
 								<div class="caption-content">
 									<div class="h3">Face Detection</div>
 									<p>MiniTravesía utilized a specialized approach to implement face detection due to the limitations of mobile devices compared to PCs.</p>
-									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
 									<div class="collapsible-content bullet-points">
 										<li>Given the reduced computational power of mobile devices, a deep neural network-based face detection algorithm, like that used in Travesía, was not feasible.</li>
 										<li>Instead, MiniTravesía employed the Haar Cascade algorithm for face detection.</li>
@@ -117,7 +117,7 @@
 								<div class="caption-content">
 									<div class="h3">Facial Landmarks</div>
 									<p>Facial landmarks play a crucial role in MiniTravesía, enhancing the interaction and gameplay experience.</p>
-									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">More info</button>
+									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
 									<div class="collapsible-content bullet-points">
 										<li>Facial landmarks, essential for tracking and interpreting facial expressions, were detected using Kazemi's algorithm.</li>
 										<li>This algorithm utilizes regression trees to determine the highest probability of each landmark's position, making it computationally demanding.</li>

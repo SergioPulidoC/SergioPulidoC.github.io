@@ -33,7 +33,7 @@
 						<li class="sub-menu-item"><a href="Travesia.html">Travesía</a></li>
 						<li class="sub-menu-item"><a href="MiniTravesia.html">MiniTravesía</a></li>
 						<li class="sub-menu-item"><a href="Emma.html">Aprendiendo con Emma</a></li>
-						<!-- Add similar sub-menu items for other projects -->
+						<li class="sub-menu-item"><a href="MindSense.html">MindSense</a></li>
 					</ul>
 				</li>
                 <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
@@ -192,7 +192,7 @@
 					</div>
 					<!-- Project 4 -->
 					<div class="col-lg-6-custom-r">
-						<a class="portfolio-item" href="#!">
+						<a class="portfolio-item" href="Emma.html">
 							<div class="caption">
 								<div class="caption-content">
 									<div class="h2">Aprendiendo con Emma (2022)</div>
@@ -214,10 +214,10 @@
 					</div>
 					<!-- Project 5 -->
 					<div class="col-lg-6-custom-l">
-						<a class="portfolio-item" href="#!">
+						<a class="portfolio-item" href="MindSense.html">
 							<div class="caption">
 								<div class="caption-content">
-									<div class="h2">Volando juntos (2018)</div>
+									<div class="h2">MindSense (2018)</div>
 									<p class="mb-0">Academic project used to help stroke patients in motor rehabilitation by creating a brain-computer interface using a videogame as feedback.</p>
 									<div class="tags">
 										<span style="background-color: #007bff;" class="tag-capsule badge badge-primary">Completed</span>

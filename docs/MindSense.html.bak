@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sergio Pulido - MindSense</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/MainIcon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.4.2/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Header-->
+        <header class="projecthead d-flex align-items-center">
+		<video autoplay muted loop>
+		  <source src="assets/videos/MindSense.mp4" type="video/mp4">
+		  <!-- Add additional source elements for different video formats if needed -->
+		  Your browser does not support the video tag.
+		</video>
+
+			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
+            <div class="container px-4 px-lg-5 text-center text-capsule">
+                <h1 class="mb-1">MindSense</h1>
+                <h3><em>Brain-Computer Interface to improve motor skills of stroke patients</em></h3>
+            </div>
+        </header>
+        <!-- About and info-->
+        <section class="content-section bg-dark" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row gx-4 gx-lg-5">
+							<!-- About -->
+							<div class="col-lg-5">
+								<div class="project-about">
+									<div class="caption" style = "min-width = 50rem">
+										<div class="caption-content">
+											<div class="h2">About</div>
+											<p class="mb-0">MindSense combines biomedical engineering and gaming to revolutionize stroke rehabilitation. Using EEG technology, players control a majestic pigeon through the power of their thoughts. Collect rings and embark on a captivating journey of recovery, where determination meets innovation.</p>
+											<i class="fa-brands fa-unity" style="margin-right: 5px"></i>
+											<i class="icon-vs" style="margin-right: 5px"></i>
+											<i class="fa-solid fa-mobile"style="margin-right: 5px"></i>
+											<i class="fa-brands fa-android" style="margin-right: 5px"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-1 d-none d-lg-block"></div>
+							<!-- Project info -->
+							<div class="col-lg-5">
+								<div class="project-about">
+									<div class="caption">
+										<div class="caption-content">
+											<div class="h2">Info</div>
+											<p><i class="fa-solid fa-user"></i> Role: Solo developer</p>
+											<p><i class="fa-solid fa-users"></i> Team size: 1</p>
+											<p><i class="fa-solid fa-stairs"></i> State: Completed</p>		
+											<p><i class="fa-solid fa-calendar"></i> Time frame: 3 year</p>																					
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section class="content-section bg-light" id="intro">
+			<div class="container px-4 px-lg-5 text-left">
+				<div class="h2">Introduction</div>
+				<strong>MindSense</strong> marks a transformative journey, bridging <strong>biomedical engineering</strong> with the world of <strong>gaming</strong>. This innovative project emerged as a beacon of hope for <strong>stroke patients</strong> seeking engaging <strong>motor rehabilitation therapies</strong>.<br><br>
+
+				Following a stroke, many individuals grapple with <strong>paralysis</strong>. <strong>Hebbs' principle</strong> suggests that persistent neural stimulation can create new pathways, fostering the <strong>recovery of motor function</strong>. Traditional rehabilitation therapies, which also leverage Hebbs' principle, often <strong>prove disheartening</strong>, as progress remains hidden from view.<br><br>
+
+				In this unique endeavor, MindSense integrates cutting-edge <strong>EEG technology</strong>. Users, empowered by motor imagery signals detected near the <strong>primary motor cortex</strong>, steer a majestic pigeon within a captivating video game. By visualizing or ceasing motor imagery, players guide the pigeon to collect rings, embarking on a journey where determination fuels recovery.<br><br>
+
+				Welcome to a world where biomedical engineering meets gaming to redefine the path to rehabilitation. Prepare to take flight and embrace the <strong>future of stroke therapy</strong> with MindSense.
+			</div>
+		</section>
+
+
+		<section class="content-section bg-dark" id="learnings">
+			<div class="container px-2 px-lg-3 text-left" style="color:white">
+				<div class="h1" style="margin-bottom: 50px">What I Learned...</div>
+				<div class="intro-text">
+					<p>
+						MindSense marked the genesis of my game development journey, and it's remarkable how it introduced me to a world of possibilities and newfound skills. For this project, I delved into the realm of game development to make motor rehabilitation therapies engaging for stroke patients, and the experience left a profound impact on me.
+					</p>
+					<p>
+						It was here that I ventured into uncharted territories, using MATLAB for brain signal processing and serial communication to link MATLAB with Unity. A distinctive aspect of this journey was that I navigated the intricate game development process independently. With no guiding professors for this specific facet of the project, I turned to online tutorials, embarking on a self-guided odyssey.
+					</p>
+					<p>
+						MindSense opened the door to an enchanting realm that I now hold dear – the world of game development. I'm profoundly grateful for the opportunity this project provided, as it ignited a passion that has become an integral part of my journey. The magic of game development has since been a guiding star, inspiring my future endeavors and enhancing the way I perceive the intersection of technology, creativity, and innovation.
+					</p>
+
+				</div>
+				<div class="row gx-4 gx-lg-5 justify-content-left text-left" style = "margin-bottom: 50px; margin-top: 50px;">
+					<div class="col-lg-6">
+						<img src="assets/img/MindSenseTrack.png" alt="MindSense's track" class="img-fluid">
+						<p style="text-align: left;"><em>Track to transverse in MindSense.</em></p>
+					</div>
+					<div class="col-lg-6">
+						<img src="assets/img/MindSenseLose.png" alt="Player loses in MindSense" class="img-fluid">
+						<p style="text-align: left;"><em>Player doesn't get enough rings in MindSense and the game is restarted.</em></p>
+					</div>				
+				</div>	
+			</div>
+		</section>
+
+		<section class="content-section bg-light" id="uiux">
+            <div class="container px-2 px-lg-3 text-left">
+				<div class="h2">Results</div>
+				<ul>
+				  <li><strong>Input Accuracy:</strong> Achieved an impressive ~75% accuracy in detecting motor imagery for game control.</li>
+				  <li><strong>Surprising Insights:</strong> Conversations with study participants revealed that individuals who frequently meditate can more easily control the game compared to those who do not meditate.</li>
+				  <li><strong>Published Papers:</strong>
+					<ul>
+					  <li>Main Paper: This comprehensive publication provides a detailed account of the project's methodology and complete results:
+						<ul>
+						  <li>
+							<a href="https://www.researchgate.net/publication/328997241_Interfaz_Cerebro-Maquina_con_base_en_Deteccion_de_Intencion_de_Movimiento_y_Tecnicas_de_Aprendizaje_Automatico">Pulido, S.D., López, J.M. Interfaz Cerebro-Máquina con base en Detección de Intención de Movimiento y Técnicas de Aprendizaje Automático. In: Encuentro Internacional de Educación en Ingeniería ACOFI 2017, Cartagena, Colombia (2017).</a>
+						  </li>
+						</ul>
+					  </li>
+					  <li>Additional Paper: This paper explores the intriguing connection between meditation and the ease of using brain-computer interfaces for brain wave modulation enhancement:
+						<ul>
+						  <li>
+							<a href="https://www.researchgate.net/publication/321141468_Brain-computer_interface_based_on_detection_of_movement_intention_as_a_means_of_brain_wave_modulation_enhancement">Pulido, S.D., López, J.M. Brain-computer interface based on detection of movement intention as a means of brain wave modulation enhancement. In: 13th International Symposium on Medical Information Processing and Analysis, San Andrés, Colombia (2017).</a>
+						  </li>
+						</ul>
+					  </li>
+					</ul>
+				  </li>
+				</ul>
+				<div class="row gx-4 gx-lg-5 justify-content-left text-left" style = "margin-bottom: 50px; margin-top: 50px;">
+					<div class="col-lg-6">
+						<img src="assets/img/MindSenseWavelet.png" alt="Use of wavelets in MindSense" class="img-fluid">
+						<p style="text-align: left;"><em>Wavelet analysis in MindSense to detect motor imagery.</em></p>
+					</div>
+					<div class="col-lg-6">
+						<img src="assets/img/MindSenseSVM.png" alt="Use of Support Vector Machines" class="img-fluid">
+						<p style="text-align: left;"><em>Use of Support Vector Machines to differentiate between rest and motor imagery.</em></p>
+					</div>	
+					<div class="col-lg-3">
+						<img src="assets/img/MindSenseUse.png" alt="User playing MindSense" class="img-fluid">
+						<p style="text-align: left;"><em>Basic setup for MindSense. The user is controlling the pigeon using motor imagery.</em></p>
+					</div>				
+				</div>				
+			</div>				
+        </section>
+		<footer class="footer text-center" id = contact>
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+					<li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.twitch.tv/anthuulos"><i class="fa-brands fa-twitch"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/anthuulos"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/SergioPulidoC"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+				<p class="text-muted small mb-0">Copyright &copy; Sergio Pulido 2023</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

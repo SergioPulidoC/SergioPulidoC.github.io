@@ -172,8 +172,6 @@
 		<section class="content-section bg-light" id="results">
             <div class="container px-2 px-lg-3 text-left">
 				<div class="h2">Results</div>
-				<div class="row gx-4 gx-lg-5 justify-content-left text-left" style = "margin-bottom: 50px">				
-				</div>
 				<p>Aprendiendo con Emma brought many satisfactory results, both in terms of the results of the project and to my growth as game developer and software developer in general.</p>
 				<div class="h3">Project Results</div>
 				<ul>
@@ -199,12 +197,12 @@
 				</ul>	
 				<div class="row gx-4 gx-lg-5 justify-content-left text-left" style = "margin-bottom: 50px; margin-top: 50px;">
 					<div class="col-lg-6">
-						<img src="assets/img/MiniTravesiaMain.png" alt="MiniTravesía's main menu" class="img-fluid">
-						<p style="text-align: left;"><em>Main menu of MiniTravesía.</em></p>
+						<img src="assets/img/EmmaRoulette.png" alt="Roulette mini-game" class="img-fluid">
+						<p style="text-align: left;"><em>Roulette mini-game in Aprendiendo con Emma.</em></p>
 					</div>
 					<div class="col-lg-6">
-						<img src="assets/img/MiniTravesiaCalibration.png" alt="MiniTravesía's calibration stage" class="img-fluid">
-						<p style="text-align: left;"><em>Main window of the calibration phase.</em></p>
+						<img src="assets/img/EmmaImages.png" alt="Image mini-game" class="img-fluid">
+						<p style="text-align: left;"><em>Facial expression mini-game in Aprendiendo con Emma.</em></p>
 					</div>				
 				</div>				
 			</div>				
