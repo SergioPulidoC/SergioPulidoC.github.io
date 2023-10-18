@@ -1293,6 +1293,16 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+  .col-lg-6-custom-l{
+	flex: 0 0 auto;
+    width: 49%;
+	margin-right: 1%;
+  }
+  .col-lg-6-custom-r{
+	flex: 0 0 auto;
+    width: 49%;
+	margin-left: 1%;
+  }
   .col-lg-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
@@ -11250,4 +11260,13 @@ box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
     padding: 10px;
     text-align: center;
+}
+
+.icon-vs {
+    width: 16px;
+    height: 16px;
+    background-image: url("../assets/img/visual-studio.svg");
+    background-size: cover;
+    display: inline-block;
+	fill: white;
 }

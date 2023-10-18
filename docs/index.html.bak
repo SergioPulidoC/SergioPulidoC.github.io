@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Sergio Pulido</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/MainIcon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.4.2/js/all.js" crossorigin="anonymous"></script>
         <!-- Simple line icons-->
@@ -167,7 +167,7 @@
 					</div>
 
 					<!-- Project 3 -->
-					<div class="col-lg-6">
+					<div class="col-lg-6"style = "width:49%; margin-right: 1%">
 						<a class="portfolio-item" href="#!">
 							<div class="caption">
 								<div class="caption-content">
@@ -189,7 +189,7 @@
 						</a>
 					</div>
 					<!-- Project 4 -->
-					<div class="col-lg-6">
+					<div class="col-lg-6"style = "width:49%; margin-left: 1%">
 						<a class="portfolio-item" href="#!">
 							<div class="caption">
 								<div class="caption-content">
@@ -211,7 +211,7 @@
 						</a>
 					</div>
 					<!-- Project 5 -->
-					<div class="col-lg-6">
+					<div class="col-lg-6"style = "width:49%; margin-right: 1%">
 						<a class="portfolio-item" href="#!">
 							<div class="caption">
 								<div class="caption-content">

@@ -90,3 +90,14 @@ function toggleBulletPoints(button) {
         button.innerText = "More info";
     }
 };
+
+function equalizeColumnHeights() {
+    const saveSystem = document.getElementById("save-system");
+    const inventorySystem = document.getElementById("inventory-system");
+
+    if (saveSystem && inventorySystem) {
+        const maxHeight = Math.max(saveSystem.clientHeight, inventorySystem.clientHeight);
+        saveSystem.style.height = `${maxHeight}px`;
+        inventorySystem.style.height = `${maxHeight}px`;
+    }
+}
