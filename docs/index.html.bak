@@ -228,7 +228,7 @@
 								</div>
 							</div>
 							<video autoplay muted loop class="img-fluid">
-								<source src="assets/videos/VolandoJuntos.mp4" type="video/mp4">
+								<source src="assets/videos/MindSense.mp4" type="video/mp4">
 								<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
 								Your browser does not support the video tag.
 							</video>
