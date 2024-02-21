@@ -48,7 +48,7 @@
 												Town Alight, conceived during PirateSoftware's Game Jam 14 in January 2024, is a dynamic real-time strategy game that thrusts players into the heart of a spreading forest fire. As the town faces imminent danger, players control up to 6 villagers armed with buckets, tasked with extinguishing fires and preventing the town's destruction.
 											</p>
 											<br><br>
-											<i class="icon-vs" style="margin-right: 5px"></i>
+											<i class="icon-godot" style="margin-right: 5px"></i>
 											<i class="fa-solid fa-mouse" style="margin-right: 5px"></i>
 											<i class="fa-solid fa-clock" style="margin-right: 5px"></i>
 											<i class="fa-solid fa-fire" style="margin-right: 5px"></i>
@@ -63,6 +63,7 @@
 									<div class="caption">
 										<div class="caption-content">
 											<div class="h2">Info</div>
+											<p><i class="fa-solid fa-link"></i> <a href="https://yourgameurl.com" target="_blank" style="color: #FFD700;">Link to Game</a></p>
 											<p><i class="fa-solid fa-user"></i> Role: Programmer</p>
 											<p><i class="fa-solid fa-users"></i> Team size: 3</p>
 											<p><i class="fa-solid fa-stairs"></i> State: Completed</p>		
