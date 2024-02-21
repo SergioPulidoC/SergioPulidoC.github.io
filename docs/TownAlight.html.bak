@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Town Alight Project</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/MainIcon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.4.2/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Header-->
+        <header class="projecthead d-flex align-items-center">
+		<video autoplay muted loop>
+		  <source src="assets/videos/TownAlight.mp4" type="video/mp4">
+		  <!-- Add additional source elements for different video formats if needed -->
+		  Your browser does not support the video tag.
+		</video>
+
+			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
+            <div class="container px-4 px-lg-5 text-center text-capsule">
+                <h1 class="mb-1">Town Alight</h1>
+                <h3><em>My first game jam submission</em></h3>
+            </div>
+        </header>
+        <!-- About and info-->
+        <section class="content-section bg-dark" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row gx-4 gx-lg-5">
+							<!-- About -->
+							<div class="col-lg-5">
+								<div class="project-about">
+									<div class="caption" style = "min-width = 50rem">
+										<div class="caption-content">
+											<div class="h2">About</div>
+											<p class="mb-0">
+												Town Alight, conceived during PirateSoftware's Game Jam 14 in January 2024, is a dynamic real-time strategy game that thrusts players into the heart of a spreading forest fire. As the town faces imminent danger, players control up to 6 villagers armed with buckets, tasked with extinguishing fires and preventing the town's destruction.
+											</p>
+											<br><br>
+											<i class="icon-vs" style="margin-right: 5px"></i>
+											<i class="fa-solid fa-mouse" style="margin-right: 5px"></i>
+											<i class="fa-solid fa-clock" style="margin-right: 5px"></i>
+											<i class="fa-solid fa-fire" style="margin-right: 5px"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-1 d-none d-lg-block"></div>
+							<!-- Project info -->
+							<div class="col-lg-5">
+								<div class="project-about">
+									<div class="caption">
+										<div class="caption-content">
+											<div class="h2">Info</div>
+											<p><i class="fa-solid fa-user"></i> Role: Programmer</p>
+											<p><i class="fa-solid fa-users"></i> Team size: 3</p>
+											<p><i class="fa-solid fa-stairs"></i> State: Completed</p>		
+											<p><i class="fa-solid fa-calendar"></i> Time frame: 2 weeks</p>																					
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section class="content-section bg-light" id="intro">
+			<div class="container px-4 px-lg-5 text-left">
+				<div class="h2">Introduction</div>
+				<strong>Town Alight</strong> is a gripping real-time strategy game that emerged from PirateSoftware's Game Jam 14, held in January 2024. With a thematic focus on 'It's Spreading,' the game plunges players into the heart of a forest fire crisis, challenging them to lead a group of villagers in a battle against spreading flames. Time is of the essence as players must strategically manage resources and navigate the ever-growing challenges to safeguard their town from the relentless advance of the wildfire.
+				<br><br>
+				In this 2D adventure, players control up to 6 villagers equipped with buckets, tasked with fetching water from rivers to douse the flames. With 10 diverse levels, each presenting unique obstacles, players must adapt their approach to combat the spreading inferno. Whether surviving for a set duration or extinguishing all fires, the stakes are high – let the flames run rampant, and the town succumbs to destruction.
+			</div>
+		</section>
+
+		<section class="content-section bg-dark" id="technology">
+			<div class="container px-2 px-lg-3 text-left" style="color:white">
+				<div class="h1" style="margin-bottom: 50px">Development Insights...</div>
+				<div class="h2">Technology Stack</div>
+				<p class="intro-text">
+					Town Alight presented unique challenges in its development, especially within the constraints of a game jam. Here's a glimpse into the technology behind the scenes:
+				</p>
+			</div>
+			<div class="container px-2 px-lg-5 text-center">
+				<div class="row gx-4 gx-lg-5 justify-content-center text-center">
+					<!-- Godot Engine -->
+					<div class="col-lg-6">
+						<div class="project-about" style="max-width:2000px">
+							<div class="caption">
+								<div class="caption-content">
+									<div class="h3">Godot Engine</div>
+									<p>Town Alight harnessed the power of the Godot Engine, an open-source game engine known for its flexibility and ease of use.</p>
+									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
+									<div class="collapsible-content bullet-points">
+										<li>Godot Engine provided a versatile framework for the development of the 2D real-time strategy game.</li>
+										<li>The engine's node system facilitated efficient scene management, allowing for dynamic level design and interactive gameplay elements.</li>
+										<li>Godot's GDScript language offered an intuitive scripting environment for rapid game prototyping and development.</li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Spreading Fire Algorithm -->
+					<div class="col-lg-6">
+						<div class="project-about" style="max-width:2000px">
+							<div class="caption">
+								<div class="caption-content">
+									<div class="h3">Spreading Fire Algorithm</div>
+									<p>The dynamic spreading fire in Town Alight introduces a complex algorithm, adding layers of strategy and challenge to the gameplay.</p>
+									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
+									<div class="collapsible-content bullet-points">
+										<li>Fire in Town Alight evolves through three stages, each larger than the last, with varying durations based on the tile being burnt.</li>
+										<li>During stages 1 and 2, the fire expands within its own tile. In stage 3, there's a probability of burning adjacent tiles each frame, intensifying the challenge.</li>
+										<li>Fire spreading velocity is tile-dependent, with different tiles burning at different rates, adding strategic depth to the gameplay.</li>
+										<li>Some tiles exhibit directional burning characteristics, such as tree leaves burning only from the trunk and not adjacent grass tiles.</li>
+										<li>Putting out behavior is tied to fire health points, determined by the time the fire has been burning. Longer-burning fires take more time to extinguish.</li>
+										<li>As fires are being put out, they can regress to a smaller stage. Stage 1 fires, when the time reaches zero, are extinguished, scorching the tile.</li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="content-section bg-light" id="uiux">
+			<div class="container px-2 px-lg-3 text-left">
+				<div class="h2">UI/UX Design</div>
+				<div class="row gx-4 gx-lg-5 justify-content-left text-left" style="margin-bottom: 50px">
+				</div>
+				<p>
+					Crafting an intuitive and engaging user interface was essential for Town Alight's success. As a real-time strategy game, the UI/UX played a crucial role in ensuring players could effectively manage their resources and respond to the dynamic challenges of the spreading wildfire.
+				</p>
+				<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
+				<div class="collapsible-content bullet-points">
+					<div class="h3">User Interface (UI)</div>
+					<p>Streamlining the user interface contributed significantly to the overall player experience:</p>
+					<ul>
+						<li><strong>Mouse Controls:</strong> The game utilizes mouse controls for seamless navigation and interaction.</li>
+						<li><strong>Informative Tutorial:</strong> A comprehensive tutorial in the main menu and pause menu guides players through the mechanics, ensuring a smooth learning curve.</li>
+					</ul>
+
+					<div class="h3">User Experience (UX)</div>
+					<p>Enhancing the overall player experience was a top priority in Town Alight's development:</p>
+					<ul>
+						<li><strong>Accessible Launch:</strong> Originally planned as a Windows executable, a last-minute decision to release a browser version expanded accessibility and player reach.</li>
+						<li><strong>Responsive Controls:</strong> The mouse-controlled gameplay offers responsive and intuitive interactions, essential for effective micromanagement.</li>
+						<li><strong>Tutorial Integration:</strong> To aid player understanding, a tutorial is available both in the main menu and pause menu, offering guidance on gameplay mechanics.</li>
+					</ul>
+				</div>
+				<!-- Include images if available -->
+			</div>
+		</section>
+
+		<footer class="footer text-center" id = contact>
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+					<li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.twitch.tv/anthuulos"><i class="fa-brands fa-twitch"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/anthuulos"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/SergioPulidoC"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+				<p class="text-muted small mb-0">Copyright &copy; Sergio Pulido 2023</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

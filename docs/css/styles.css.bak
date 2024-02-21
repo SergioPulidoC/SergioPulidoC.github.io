@@ -11052,6 +11052,7 @@ footer.footer .social-link:hover {
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+  background-color: var(--bs-link-color);
 }
 .portfolio-item .caption {
   display: flex;
@@ -11258,8 +11259,11 @@ box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     background-color: #333;
     color: #fff;
     cursor: pointer;
+	border-radius: 10px;
     padding: 10px;
     text-align: center;
+	width: 100%;
+    margin-bottom: 10px;
 }
 
 .icon-vs {
@@ -11269,5 +11273,4 @@ box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     background-size: cover;
     display: inline-block;
 	fill: white;
-	z-index: 6
 }
