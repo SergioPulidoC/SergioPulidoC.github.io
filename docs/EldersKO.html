@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Elders K.O. Project</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/MainIcon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.4.2/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Header-->
+        <header class="projecthead d-flex align-items-center">
+			<video autoplay muted loop class="img-fluid">
+				<source src="assets/videos/EldersKO.mp4" type="video/mp4">
+				<!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+				Your browser does not support the video tag.
+			</video>
+
+			<a class="btn btn-home" href="index.html#projects" style="position:fixed; left : 15px"><i class="fa-solid fa-house"></i></a>
+            <div class="container px-4 px-lg-5 text-center text-capsule">
+                <h1 class="mb-1">Elders K.O.</h1>
+                <h3><em>Chaotic multiplayer minigames where the elderly fight for glory</em></h3>
+            </div>
+        </header>
+        <!-- About and info-->
+        <section class="content-section bg-dark" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row gx-4 gx-lg-5">
+							<!-- About -->
+							<div class="col-lg-5">
+								<div class="project-about">
+									<div class="caption" style = "min-width = 50rem">
+										<div class="caption-content">
+											<div class="h2">About</div>
+											<p class="mb-0">
+												Elders KO is a chaotic multiplayer party game where elderly characters compete in fast-paced, physics-driven minigames. Developed by a 10-person team, it blends slapstick combat with unpredictable challenges, and I contributed to gameplay programming, system design, and core implementation in Godot.
+											</p>
+											<br><br>
+											<i class="icon-godot" style="margin-right: 5px"></i>
+											<i class="fa-solid fa-mouse" style="margin-right: 5px"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-1 d-none d-lg-block"></div>
+							<!-- Project info -->
+							<div class="col-lg-5">
+								<div class="project-about">
+									<div class="caption">
+										<div class="caption-content">
+											<div class="h2">Info</div>
+											<p><i class="fa-solid fa-link"></i> <a href="https://store.steampowered.com/app/3602630/Elders_KO/" target="_blank" style="color: #FFD700;">Steam Page</a></p>
+											<p><i class="fa-solid fa-user"></i> Role: Programmer</p>
+											<p><i class="fa-solid fa-users"></i> Team size: 10</p>
+											<p><i class="fa-solid fa-stairs"></i> State: In progress</p>		
+											<p><i class="fa-solid fa-calendar"></i> Time frame: 1 year</p>																					
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section class="content-section bg-light" id="intro">
+			<div class="container px-4 px-lg-5 text-left">
+				<div class="h2">Introduction</div>
+				<strong>Elders K.O.</strong> is a multiplayer party game built around fast-paced, physics-driven minigames where elderly characters compete in chaotic, unpredictable rounds. Each challenge emphasizes quick reactions, playful interactions, and short, energetic gameplay loops that keep matches lighthearted and competitive.
+				As one of two programmers on a ten-person team, I developed several of the minigames, implemented the item system, and helped maintain the networking layer. My work focused on gameplay logic, interactions, and ensuring the experience remained responsive and consistent across online sessions.
+			</div>
+		</section>
+
+		<section class="content-section bg-dark" id="technology">
+			<div class="container px-2 px-lg-3 text-left" style="color:white">
+				<div class="h1" style="margin-bottom: 50px">What I learned...</div>
+				<p class="intro-text">
+					Elders K.O. was a completely new experience for me, as it was the largest team I had worked with up to that point. Collaborating with such an interdisciplinary group pushed me to strengthen my organization and communication skills, and to adapt my workflow to a more structured, team-oriented development environment. This was also my first time contributing to a Godot project at this scale, where multiple modular systems were needed to maintain a stable, optimized, and fluid multiplayer experience.
+					There were many challenges throughout development, but here are some of the key ones I faced:
+				</p>
+			</div>
+			<div class="container px-2 px-lg-5 text-center">
+				<div class="row gx-4 gx-lg-5 justify-content-center text-center">
+					<!-- Multiplayer game -->
+					<div class="col-lg-6">
+						<div class="project-about" style="max-width:2000px">
+							<div class="caption">
+								<div class="caption-content">
+									<div class="h3">Multiplayer Game</div>
+									<p>Elders K.O. was my first experience developing a multiplayer game, which comes with challenges that simply don’t exist in single-player projects.</p>
+									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
+									<div class="collapsible-content bullet-points">
+										<li>Elders K.O. uses a peer-to-peer (P2P) model, requiring one player to host the session.</li>
+										<li>Without a dedicated server, it becomes crucial to optimize all network traffic, since latency directly affects gameplay.</li>
+										<li>By combining Remote Procedure Calls (RPCs) with Godot’s native multiplayer synchronizer, we ensured that only essential data was sent over the network.</li>
+										<li>To maintain clean and maintainable code, we built a custom networking library for Elders K.O., centralizing every system that required network communication.</li>
+										<li>We implemented desynchronization detection and recovery logic to ensure that players could remain synced even during unstable or inconsistent network conditions.</li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Minigame Implementation -->
+					<div class="col-lg-6">
+						<div class="project-about" style="max-width:2000px">
+							<div class="caption">
+								<div class="caption-content">
+									<div class="h3">Minigame Implementation</div>
+									<p>Elders K.O. is built around a collection of fast-paced minigames, each designed to keep matches energetic and varied through different types of challenges.</p>
+									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
+									<div class="collapsible-content bullet-points">
+										<li>As the main developer in charge of minigame implementation, I was responsible for ensuring that each challenge felt fluid, readable, and fun to play.</li>
+										<li>Every minigame introduced its own design and technical requirements, making variety a key element of the experience. Here are a few examples:</li>
+										<li>A race minigame required continuously tracking each player's relative distance to the goal, taking obstacles into account, to provide accurate, real-time standings.</li>
+										<li>A chicken-chasing minigame required creating a custom chicken entity with a unique AI system that flees from players but behaves differently when placed inside a barn.</li>
+										<li>A worm-whacking minigame required procedurally spawning worm entities in a way that felt fair for all players, ensuring that no participant received an unintended advantage.</li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Item Implementation -->
+					<div class="col-lg-6">
+						<div class="project-about" style="max-width:2000px">
+							<div class="caption">
+								<div class="caption-content">
+									<div class="h3">Item Implementation</div>
+									<p>Minigames alone weren’t enough to keep Elders K.O. engaging throughout a full match. A large and diverse set of items added depth, unpredictability, and a unique layer of strategy to every round.</p>
+									<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
+									<div class="collapsible-content bullet-points">
+										<li>I implemented most of the game's items (around 80%), which required not only strong technical skills but constant communication with multiple departments.</li>
+										<li>Each item began with a clear design pass, involving regular meetings with the design team to ensure that ideas matched the engine’s limitations and gameplay goals.</li>
+										<li>The logic behind every item was fully decoupled from its visuals, allowing for a modular system that remained balanced and easy to extend.</li>
+										<li>Close collaboration with the animation team ensured that item animations properly matched each item’s behavior and interactions with the world.</li>
+										<li>Visual effects (VFX) played a key role in providing clear and immediate feedback to players during item use.</li>
+										<li>Some of the items I implemented include swords, hammers, pickaxes, bows, guns, and both usable and throwable potions.</li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="row gx-4 gx-lg-5 justify-content-center text-center" style = "margin-top: 50px; color:white">
+						<div class="col-lg-6">
+							<img src="assets/img/EldersKO1.png" alt="Elders KO Lobby" class="img-fluid">
+							<p style="text-align: left;"><em>Lobby scene in Elders K.O.</em></p>
+						</div>
+						<div class="col-lg-6">
+							<img src="assets/img/EldersKO2.png" alt="Elders KO Worm" class="img-fluid">
+							<p style="text-align: left;"><em>Worm-whacking mini-game.</em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="content-section bg-light" id="ecs">
+			<div class="container px-2 px-lg-3 text-left">
+				<div class="h2">Entity–Component System (ECS)</div>
+				<div class="row gx-4 gx-lg-5 justify-content-left text-left" style="margin-bottom: 50px">
+				</div>
+
+				<p>
+					Elders K.O. required a scalable and modular architecture to support dozens of unique interactions, items, abilities, and minigame-specific behaviors. 
+					To achieve this, I helped develop a custom Entity–Component System (ECS), which allowed us to separate data from behavior and manage complex gameplay 
+					logic in a clean, extensible way. Since Godot does not natively provide an ECS framework, building our own was essential for keeping the project organized 
+					and maintainable as it grew in scope.
+				</p>
+
+				<button class="collapsible-button toggle-button" onclick="toggleBulletPoints(this)">Details</button>
+				<div class="collapsible-content bullet-points">
+
+					<div class="h3">ECS Concept</div>
+					<p>The core benefits that made an ECS the right choice for Elders K.O. included:</p>
+					<ul>
+						<li><strong>Modularity:</strong> Gameplay features were broken into small, independent components, making them easier to reuse and combine.</li>
+						<li><strong>Orderly Architecture:</strong> Separating data (components) from logic (systems) helped avoid tangled scripts and improved clarity across the codebase.</li>
+						<li><strong>Scalability:</strong> New items, minigame mechanics, or character interactions could be added without rewriting existing systems.</li>
+					</ul>
+
+					<div class="h3">ECS Implementation in Elders K.O.</div>
+					<p>Building a custom ECS in Godot required careful planning and cross-team collaboration:</p>
+					<ul>
+						<li><strong>Custom Framework:</strong> Since Godot lacks a native ECS, we implemented our own system to manage entities, components, and system execution order.</li>
+						<li><strong>Minigame Flexibility:</strong> New components could be mixed and matched to create minigame-specific logic without duplicating code.</li>
+						<li><strong>Networking Integration:</strong> The ECS helped synchronize only the necessary component data across players, improving network efficiency in a P2P environment.</li>
+						<li><strong>Modular Item Behaviors:</strong> Items used combinations of components (effects, cooldowns, interactions, buffs, etc.) that systems could process consistently across all minigames.</li>
+					</ul>
+
+				</div>
+				<div class="row gx-4 gx-lg-5 justify-content-center text-center" style = "margin-top: 50px">
+					<div class="col-lg-6">
+						<img src="assets/img/EldersKO3.png" alt="Elders KO Shotguns" class="img-fluid">
+						<p style="text-align: left;"><em>Elders aiming at each other</em></p>
+					</div>
+					<div class="col-lg-6">
+						<img src="assets/img/EldersKO2.png" alt="Elders KO Bullseye" class="img-fluid">
+						<p style="text-align: left;"><em>Bullseye mini-game.</em></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer text-center" id = contact>
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+					<li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.twitch.tv/anthuulos"><i class="fa-brands fa-twitch"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/anthuulos"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/SergioPulidoC"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+				<p class="text-muted small mb-0">Copyright &copy; Sergio Pulido 2023</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
